@@ -1,4 +1,4 @@
---modelo usuarios
+-- modelo usuarios
 
 create schema recursamiento;
 use recursamiento;
@@ -19,13 +19,13 @@ use recursamiento;
 *
 */
 create table users (
-       id into AUTO_INCREMENT,
+       id int AUTO_INCREMENT,
        name varchar(16) NOT NULL,
        passwd varchar(300) NOT NULL,
        firstname varchar(50) NOT NULL,
        lastname varchar(50) NOT NULL,
        age int NOT NULL,
-       gender enum('M','F') NOT NULL
+       gender enum('M','F') NOT NULL,
        email varchar(200) NOT NULL,
        phone varchar(30) NOT NULL DEFAULT 'Sin Telefono',
        country_id int NOT NULL,
