@@ -176,3 +176,83 @@ body, h1, h2, h3, h4, h5, h6, figure {
 /*Actividad final*/
 /*Organizar las reglas CSS descritos debajo, por secciones del sitio y por tipo de regla
 border:doble 3px*/
+div{
+    display: block;
+}
+#pie {
+    margin-bottom: 20px;
+}
+#encabezado, #barnav, #contenido, #pie {
+    width: 980px;
+    margin: 0 auto;
+}
+#politicas, #politicas a {
+    color: #6b6b6b;
+}
+a {text-decoration: none;}
+#politicas {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    font-variant: small-caps;
+}
+
+#contenido, #politicas {
+    background: 0 100% url(../images/linea_doble.gif?1382941343) repeat-x;
+    padding: 10px 0;
+}
+abbr[title], abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #999;
+}
+.frm-busqueda {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 0 0 #f8f8f8;
+    padding: 5px 5px 3px 5px;
+    position: relative;
+}
+.derecha{ float: right;}
+
+#separador-sems {
+    margin: 0 0 30px;
+    position: relative;
+    clear: both;
+}
+#separador-sems #logo-sems {
+    background-image: url(../images/sems_footer.png?1382946314);
+    background-repeat: no-repeat;
+    display: block;
+    height: 60px;
+    width: 215px;
+    margin: 0 auto;
+    text-indent: -9999px;
+}
+#separador-sems #logo-sems::before {
+    left: 0;
+}
+#separador-sems #logo-sems::before, #separador-sems #logo-sems::after {
+background: 0 100% url(../images/linea_doble.gif?1382941343) repeat-x;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 370px;
+    bottom: 28px;
+}
+#separador-sems #logo-sems::after {
+    right: 0;
+}
+a {
+    text-decoration: none;
+    color: #b92025;
+}
+#direccion, #direccion a {
+    color: #848484;
+}
+#direccion {
+    font: 14px/17px serif;
+    text-align: center;
+}
+* {box-sizing: border-box;}
+a{text-decoration: none;}
